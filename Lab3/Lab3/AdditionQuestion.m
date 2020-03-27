@@ -12,18 +12,13 @@
 
 -(instancetype) init{
     if (self =[super init]){
-        _num1 = arc4random_uniform(100);
-        _num2 = arc4random_uniform(100);
-        _answer = _num1 + _num2;
+        [self generateQuestion];
     }
     return self;
 }
 
--(BOOL) isAnswerCorrect: (NSInteger *) ans{
-    if (_answer == ans){
-        return true;
-    }else{
-        return false;
-    }
+-(void) generateQuestion{
+    super.answer = super.rightValue + super.leftValue;
+    super.question = [NSString stringWithFormat:@"%ld + %ld ?", super.rightValue, super.leftValue];
 }
 @end

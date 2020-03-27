@@ -8,7 +8,9 @@
 
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
+#import "QuestionManager.h"
+#import "ScoreKeeper.h"
 NSString *getUserInput(int maxLength, NSString *prompt) {
     if (maxLength < 1) {
         maxLength = 255;
@@ -24,17 +26,27 @@ NSString *getUserInput(int maxLength, NSString *prompt) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        QuestionManager * QM = [[QuestionManager alloc]init];
+        ScoreKeeper * keepScore = [ScoreKeeper new];
         while (YES) {
-            AdditionQuestion * ans = [[AdditionQuestion alloc]init];
-            NSLog(@"\n %ld + %ld = ?\n Enter your answer: ('q' to quit)", ans.num1, ans.num2);
-            NSString * result = getUserInput(10, @"\nThe answer is : ");
+            Question * quesAns = [Question new];
+            [QM.questions addObject:quesAns];
+            
+            NSLog(@"%@ Enter your answer: ('q' to quit)", quesAns.question);
+            NSString * result = getUserInput(10, @"The answer is : ");
             if ([result isEqualToString:@"q"]) { break; }
             
-            if (result.intValue == ans.answer) {
+            if (result.intValue == quesAns.answer) {
                 NSLog(@"RIGHT!");
+                keepScore.right++;
             }else {
-                NSLog(@"WRONG!");
+                NSLog(@"WRONG! The answer is %ld.", quesAns.answer);
+                keepScore.wrong++;
             }
+            
+            NSLog(@"%@", QM.timeOutput);
+            NSLog(@"%@", [keepScore outputScore]);
+            NSLog(@"----------------------------------------------\n");
         }
     }
     return 0;
