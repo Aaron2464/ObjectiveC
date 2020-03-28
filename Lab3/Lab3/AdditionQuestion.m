@@ -19,6 +19,6 @@
 
 -(void) generateQuestion{
     super.answer = super.rightValue + super.leftValue;
-    super.question = [NSString stringWithFormat:@"%ld + %ld ?", super.rightValue, super.leftValue];
+    super.question = [NSString stringWithFormat:@"%ld + %ld = ?", super.rightValue, super.leftValue];
 }
 @end

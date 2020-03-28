@@ -8,6 +8,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import "UserInput.h"
 #import "Question.h"
 #import "QuestionManager.h"
 #import "QuestionFactory.h"
@@ -35,7 +36,8 @@ int main(int argc, const char * argv[]) {
             [QM.questions addObject:quesAns];
             
             NSLog(@"%@ Enter your answer: ('q' to quit)", quesAns.question);
-            NSString * result = getUserInput(10, @"The answer is : ");
+//            NSString * result = getUserInput(10, @"The answer is : ");
+            NSString * result = [UserInput getUserInputWithlenght:10 andPrompt: @"The answer is : "];
             if ([result isEqualToString:@"q"]) { break; }
             
             if (result.intValue == quesAns.answer) {

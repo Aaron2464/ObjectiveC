@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D56FB60242ECD49007DD2D2 /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D56FB5F242ECD49007DD2D2 /* QuestionFactory.m */; };
+		9D56FB63242ED429007DD2D2 /* UserInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D56FB62242ED429007DD2D2 /* UserInput.m */; };
 		9D662C96242D518E00D45173 /* MultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D662C95242D518E00D45173 /* MultiplicationQuestion.m */; };
 		9D662C99242D51DC00D45173 /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D662C98242D51DC00D45173 /* DivisionQuestion.m */; };
 		9D662C9C242D656F00D45173 /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D662C9B242D656F00D45173 /* QuestionManager.m */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		9D56FB5E242ECD49007DD2D2 /* QuestionFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
 		9D56FB5F242ECD49007DD2D2 /* QuestionFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
+		9D56FB61242ED429007DD2D2 /* UserInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInput.h; sourceTree = "<group>"; };
+		9D56FB62242ED429007DD2D2 /* UserInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInput.m; sourceTree = "<group>"; };
 		9D662C94242D518E00D45173 /* MultiplicationQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiplicationQuestion.h; sourceTree = "<group>"; };
 		9D662C95242D518E00D45173 /* MultiplicationQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplicationQuestion.m; sourceTree = "<group>"; };
 		9D662C97242D51DC00D45173 /* DivisionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivisionQuestion.h; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				9D8A2624242D47E60010C258 /* Question.m */,
 				9D56FB5E242ECD49007DD2D2 /* QuestionFactory.h */,
 				9D56FB5F242ECD49007DD2D2 /* QuestionFactory.m */,
+				9D56FB61242ED429007DD2D2 /* UserInput.h */,
+				9D56FB62242ED429007DD2D2 /* UserInput.m */,
 			);
 			path = Lab3;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				9D662C9C242D656F00D45173 /* QuestionManager.m in Sources */,
 				9D8A2625242D47E60010C258 /* Question.m in Sources */,
 				9D8A261C242C0DB90010C258 /* AdditionQuestion.m in Sources */,
+				9D56FB63242ED429007DD2D2 /* UserInput.m in Sources */,
 				9D662C96242D518E00D45173 /* MultiplicationQuestion.m in Sources */,
 				9D56FB60242ECD49007DD2D2 /* QuestionFactory.m in Sources */,
 				9D8A2622242C17420010C258 /* Collection.m in Sources */,
