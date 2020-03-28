@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "Question.h"
 #import "QuestionManager.h"
+#import "QuestionFactory.h"
 #import "ScoreKeeper.h"
 NSString *getUserInput(int maxLength, NSString *prompt) {
     if (maxLength < 1) {
@@ -27,9 +28,10 @@ NSString *getUserInput(int maxLength, NSString *prompt) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         QuestionManager * QM = [[QuestionManager alloc]init];
+        QuestionFactory * QF = [[QuestionFactory alloc]init];
         ScoreKeeper * keepScore = [ScoreKeeper new];
         while (YES) {
-            Question * quesAns = [Question new];
+            Question * quesAns = [QF generateRandomQuestion];
             [QM.questions addObject:quesAns];
             
             NSLog(@"%@ Enter your answer: ('q' to quit)", quesAns.question);
