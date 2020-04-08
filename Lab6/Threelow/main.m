@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Dice.h"
-
+#import "GameController.h"
 NSString *getUserInput(NSString *prompt) {
     if (prompt == NULL)
         NSLog(@"\n%@\n%@\n%@\n%@\n%@\n%@\n%@",
@@ -29,12 +29,12 @@ NSString *getUserInput(NSString *prompt) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        
+        GameController * gameCtrl = [GameController new];
         while (YES) {
             NSString *opt = getUserInput(NULL);
             if ([opt isEqualToString:@"roll"]) {
-                Dice * dice = [Dice new];
-                NSLog(@"%@", dice.getDice);
+                gameCtrl.rolDice;
+                NSLog(@"%@", gameCtrl.diceArray);
             }
         }
     }
