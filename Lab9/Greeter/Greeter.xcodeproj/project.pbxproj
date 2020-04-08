@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D6354C5243D33F30085B4AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6354C4243D33F30085B4AE /* main.m */; };
-		9D6354CD243D3AD30085B4AE /* GreeterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6354CC243D3AD30085B4AE /* GreeterDelegate.m */; };
-		9D6354D0243D3CD90085B4AE /* FriendlyGreetingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6354CF243D3CD90085B4AE /* FriendlyGreetingDecider.m */; };
+		9D6354FD243D4A540085B4AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6354FC243D4A540085B4AE /* main.m */; };
+		9D635505243D4A730085B4AE /* FriendlyGreetingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D635504243D4A730085B4AE /* FriendlyGreetingDecider.m */; };
+		9D635508243D4A820085B4AE /* GreeterDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D635507243D4A820085B4AE /* GreeterDelegate.m */; };
+		9D63550B243D4C780085B4AE /* UnfriendlyGreetingDecider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63550A243D4C780085B4AE /* UnfriendlyGreetingDecider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9D6354BF243D33F20085B4AE /* CopyFiles */ = {
+		9D6354F7243D4A540085B4AE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +26,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D6354C1243D33F30085B4AE /* Lab9 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab9; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D6354C4243D33F30085B4AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9D6354CB243D3AD30085B4AE /* GreeterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreeterDelegate.h; sourceTree = "<group>"; };
-		9D6354CC243D3AD30085B4AE /* GreeterDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreeterDelegate.m; sourceTree = "<group>"; };
-		9D6354CE243D3CD90085B4AE /* FriendlyGreetingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendlyGreetingDecider.h; sourceTree = "<group>"; };
-		9D6354CF243D3CD90085B4AE /* FriendlyGreetingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendlyGreetingDecider.m; sourceTree = "<group>"; };
+		9D6354F9243D4A540085B4AE /* Greeter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Greeter; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D6354FC243D4A540085B4AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D635503243D4A730085B4AE /* FriendlyGreetingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendlyGreetingDecider.h; sourceTree = "<group>"; };
+		9D635504243D4A730085B4AE /* FriendlyGreetingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendlyGreetingDecider.m; sourceTree = "<group>"; };
+		9D635506243D4A820085B4AE /* GreeterDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GreeterDelegate.h; sourceTree = "<group>"; };
+		9D635507243D4A820085B4AE /* GreeterDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GreeterDelegate.m; sourceTree = "<group>"; };
+		9D635509243D4C780085B4AE /* UnfriendlyGreetingDecider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnfriendlyGreetingDecider.h; sourceTree = "<group>"; };
+		9D63550A243D4C780085B4AE /* UnfriendlyGreetingDecider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnfriendlyGreetingDecider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9D6354BE243D33F20085B4AE /* Frameworks */ = {
+		9D6354F6243D4A540085B4AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,69 +47,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9D6354B8243D33F20085B4AE = {
+		9D6354F0243D4A540085B4AE = {
 			isa = PBXGroup;
 			children = (
-				9D6354C3243D33F30085B4AE /* Lab9 */,
-				9D6354C2243D33F30085B4AE /* Products */,
+				9D6354FB243D4A540085B4AE /* Greeter */,
+				9D6354FA243D4A540085B4AE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9D6354C2243D33F30085B4AE /* Products */ = {
+		9D6354FA243D4A540085B4AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D6354C1243D33F30085B4AE /* Lab9 */,
+				9D6354F9243D4A540085B4AE /* Greeter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D6354C3243D33F30085B4AE /* Lab9 */ = {
+		9D6354FB243D4A540085B4AE /* Greeter */ = {
 			isa = PBXGroup;
 			children = (
-				9D6354C4243D33F30085B4AE /* main.m */,
-				9D6354CB243D3AD30085B4AE /* GreeterDelegate.h */,
-				9D6354CE243D3CD90085B4AE /* FriendlyGreetingDecider.h */,
-				9D6354CF243D3CD90085B4AE /* FriendlyGreetingDecider.m */,
-				9D6354CC243D3AD30085B4AE /* GreeterDelegate.m */,
+				9D6354FC243D4A540085B4AE /* main.m */,
+				9D635503243D4A730085B4AE /* FriendlyGreetingDecider.h */,
+				9D635504243D4A730085B4AE /* FriendlyGreetingDecider.m */,
+				9D635509243D4C780085B4AE /* UnfriendlyGreetingDecider.h */,
+				9D63550A243D4C780085B4AE /* UnfriendlyGreetingDecider.m */,
+				9D635506243D4A820085B4AE /* GreeterDelegate.h */,
+				9D635507243D4A820085B4AE /* GreeterDelegate.m */,
 			);
-			path = Lab9;
+			path = Greeter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D6354C0243D33F20085B4AE /* Lab9 */ = {
+		9D6354F8243D4A540085B4AE /* Greeter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D6354C8243D33F30085B4AE /* Build configuration list for PBXNativeTarget "Lab9" */;
+			buildConfigurationList = 9D635500243D4A540085B4AE /* Build configuration list for PBXNativeTarget "Greeter" */;
 			buildPhases = (
-				9D6354BD243D33F20085B4AE /* Sources */,
-				9D6354BE243D33F20085B4AE /* Frameworks */,
-				9D6354BF243D33F20085B4AE /* CopyFiles */,
+				9D6354F5243D4A540085B4AE /* Sources */,
+				9D6354F6243D4A540085B4AE /* Frameworks */,
+				9D6354F7243D4A540085B4AE /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Lab9;
-			productName = Lab9;
-			productReference = 9D6354C1243D33F30085B4AE /* Lab9 */;
+			name = Greeter;
+			productName = Greeter;
+			productReference = 9D6354F9243D4A540085B4AE /* Greeter */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9D6354B9243D33F20085B4AE /* Project object */ = {
+		9D6354F1243D4A540085B4AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = AaronH;
 				TargetAttributes = {
-					9D6354C0243D33F20085B4AE = {
+					9D6354F8243D4A540085B4AE = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 9D6354BC243D33F20085B4AE /* Build configuration list for PBXProject "Lab9" */;
+			buildConfigurationList = 9D6354F4243D4A540085B4AE /* Build configuration list for PBXProject "Greeter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,31 +119,32 @@
 				en,
 				Base,
 			);
-			mainGroup = 9D6354B8243D33F20085B4AE;
-			productRefGroup = 9D6354C2243D33F30085B4AE /* Products */;
+			mainGroup = 9D6354F0243D4A540085B4AE;
+			productRefGroup = 9D6354FA243D4A540085B4AE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D6354C0243D33F20085B4AE /* Lab9 */,
+				9D6354F8243D4A540085B4AE /* Greeter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9D6354BD243D33F20085B4AE /* Sources */ = {
+		9D6354F5243D4A540085B4AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6354C5243D33F30085B4AE /* main.m in Sources */,
-				9D6354D0243D3CD90085B4AE /* FriendlyGreetingDecider.m in Sources */,
-				9D6354CD243D3AD30085B4AE /* GreeterDelegate.m in Sources */,
+				9D635505243D4A730085B4AE /* FriendlyGreetingDecider.m in Sources */,
+				9D6354FD243D4A540085B4AE /* main.m in Sources */,
+				9D635508243D4A820085B4AE /* GreeterDelegate.m in Sources */,
+				9D63550B243D4C780085B4AE /* UnfriendlyGreetingDecider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		9D6354C6243D33F30085B4AE /* Debug */ = {
+		9D6354FE243D4A540085B4AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -196,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		9D6354C7243D33F30085B4AE /* Release */ = {
+		9D6354FF243D4A540085B4AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -247,7 +253,7 @@
 			};
 			name = Release;
 		};
-		9D6354C9243D33F30085B4AE /* Debug */ = {
+		9D635501243D4A540085B4AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -255,7 +261,7 @@
 			};
 			name = Debug;
 		};
-		9D6354CA243D33F30085B4AE /* Release */ = {
+		9D635502243D4A540085B4AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +272,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D6354BC243D33F20085B4AE /* Build configuration list for PBXProject "Lab9" */ = {
+		9D6354F4243D4A540085B4AE /* Build configuration list for PBXProject "Greeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D6354C6243D33F30085B4AE /* Debug */,
-				9D6354C7243D33F30085B4AE /* Release */,
+				9D6354FE243D4A540085B4AE /* Debug */,
+				9D6354FF243D4A540085B4AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D6354C8243D33F30085B4AE /* Build configuration list for PBXNativeTarget "Lab9" */ = {
+		9D635500243D4A540085B4AE /* Build configuration list for PBXNativeTarget "Greeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9D6354C9243D33F30085B4AE /* Debug */,
-				9D6354CA243D33F30085B4AE /* Release */,
+				9D635501243D4A540085B4AE /* Debug */,
+				9D635502243D4A540085B4AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9D6354B9243D33F20085B4AE /* Project object */;
+	rootObject = 9D6354F1243D4A540085B4AE /* Project object */;
 }
