@@ -8,12 +8,36 @@
 
 #import <Foundation/Foundation.h>
 #import "Dice.h"
+
+NSString *getUserInput(NSString *prompt) {
+    if (prompt == NULL)
+        NSLog(@"\n%@\n%@\n%@\n%@\n%@\n%@\n%@",
+          @"\'roll\'  to roll the dice",
+          @"\'hold\'  to hold a dice",
+          @"\'reset\' to un-hold all dice",
+          @"\'disp\'  to show current stats",
+          @"\'new\'   to start new game",
+          @"\'end\'   to end the game",
+          @"\'done\'  to exit the game");
+    else NSLog(@"%@", prompt);
+    char inputChars[255];
+    char *input = fgets(inputChars, 255, stdin);
+    if (input != NULL) return [[NSString stringWithUTF8String:input] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return NULL;
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        Dice * dice = [Dice new];
-    
-        NSLog(@"%@", dice.getDice);
+        
+        while (YES) {
+            NSString *opt = getUserInput(NULL);
+            if ([opt isEqualToString:@"roll"]) {
+                Dice * dice = [Dice new];
+                NSLog(@"%@", dice.getDice);
+            }
+        }
     }
     return 0;
 }
+
