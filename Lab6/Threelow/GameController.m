@@ -23,11 +23,15 @@
     return self;
 }
 
-- (void) rolDice{
+- (void) rollDice{
     NSMutableArray * tmpDice = [NSMutableArray new];
     for (int i = 0; i < 5; ++i)
         [tmpDice addObject:[Dice new]];
     _diceArray = tmpDice;
+}
+
+- (void) holdDieWithNum: (int)num {
+    
 }
 
 @end

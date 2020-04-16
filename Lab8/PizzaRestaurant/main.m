@@ -10,19 +10,13 @@
 
 #import "Kitchen.h"
 
-int main(int argc, const char * argv[])
-{
-
+int main(int argc, const char * argv[]){
     @autoreleasepool {
-        
         NSLog(@"Please pick your pizza size and toppings:");
-        
         Kitchen *restaurantKitchen = [Kitchen new];
-        
         while (TRUE) {
             // Loop forever
-            
-            NSLog(@"> ");
+            NSLog(@" ");
             char str[100];
             fgets (str, 100, stdin);
             
@@ -38,8 +32,6 @@ int main(int argc, const char * argv[])
             Pizza *orderedPizza = [restaurantKitchen makePizza:commandWords];
             NSLog(@"Pizza size: %ld, topping: %@", orderedPizza.size, orderedPizza.toppings);
         }
-
     }
     return 0;
 }
-

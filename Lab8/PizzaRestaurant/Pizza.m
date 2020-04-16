@@ -46,4 +46,13 @@
     return UNDEFINED;
 }
 
++ (NSString *)sizeToString:(PizzaSize)size {
+    switch (size) {
+        case SMALL: return @"small";
+        case MEDIUM: return @"medium";
+        case LARGE: return @"large";
+        default: return @"";
+    }
+}
+
 @end

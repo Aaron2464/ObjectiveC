@@ -33,7 +33,7 @@ int main(int argc, const char * argv[]) {
         while (YES) {
             NSString *opt = getUserInput(NULL);
             if ([opt isEqualToString:@"roll"]) {
-                gameCtrl.rolDice;
+                gameCtrl.rollDice;
                 NSLog(@"%@", gameCtrl.diceArray);
             }
         }

@@ -12,6 +12,6 @@
 @interface GameController : NSObject
 
 @property (nonatomic, readonly, strong) NSArray * diceArray;
-- (void) rolDice;
+- (void) rollDice;
 @end
 
